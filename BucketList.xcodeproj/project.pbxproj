@@ -11,6 +11,8 @@
 		1850508028AC2B7F00B05F3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850507F28AC2B7F00B05F3A /* ContentView.swift */; };
 		1850508228AC2B8400B05F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1850508128AC2B8400B05F3A /* Assets.xcassets */; };
 		1850508528AC2B8400B05F3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1850508428AC2B8400B05F3A /* Preview Assets.xcassets */; };
+		1850508D28AC4EF000B05F3A /* conformanceToComparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850508C28AC4EF000B05F3A /* conformanceToComparable.swift */; };
+		1850508F28AC570700B05F3A /* DocumentsDirectoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850508E28AC570700B05F3A /* DocumentsDirectoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		1850507F28AC2B7F00B05F3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1850508128AC2B8400B05F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1850508428AC2B8400B05F3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1850508C28AC4EF000B05F3A /* conformanceToComparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conformanceToComparable.swift; sourceTree = "<group>"; };
+		1850508E28AC570700B05F3A /* DocumentsDirectoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsDirectoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		1850507C28AC2B7F00B05F3A /* BucketList */ = {
 			isa = PBXGroup;
 			children = (
+				1850508B28AC4EB500B05F3A /* exercises */,
 				1850507D28AC2B7F00B05F3A /* BucketListApp.swift */,
 				1850507F28AC2B7F00B05F3A /* ContentView.swift */,
 				1850508128AC2B8400B05F3A /* Assets.xcassets */,
@@ -65,6 +70,15 @@
 				1850508428AC2B8400B05F3A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1850508B28AC4EB500B05F3A /* exercises */ = {
+			isa = PBXGroup;
+			children = (
+				1850508C28AC4EF000B05F3A /* conformanceToComparable.swift */,
+				1850508E28AC570700B05F3A /* DocumentsDirectoryView.swift */,
+			);
+			path = exercises;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1850508D28AC4EF000B05F3A /* conformanceToComparable.swift in Sources */,
+				1850508F28AC570700B05F3A /* DocumentsDirectoryView.swift in Sources */,
 				1850508028AC2B7F00B05F3A /* ContentView.swift in Sources */,
 				1850507E28AC2B7F00B05F3A /* BucketListApp.swift in Sources */,
 			);
