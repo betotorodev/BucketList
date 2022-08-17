@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		182FD11E28AD449100C8DCA7 /* ViewsWithEnumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FD11D28AD449100C8DCA7 /* ViewsWithEnumView.swift */; };
 		182FD12028AD46E400C8DCA7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FD11F28AD46E400C8DCA7 /* MapView.swift */; };
+		182FD12228AD560900C8DCA7 /* FaceIdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FD12128AD560900C8DCA7 /* FaceIdView.swift */; };
 		1850507E28AC2B7F00B05F3A /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850507D28AC2B7F00B05F3A /* BucketListApp.swift */; };
 		1850508028AC2B7F00B05F3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850507F28AC2B7F00B05F3A /* ContentView.swift */; };
 		1850508228AC2B8400B05F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1850508128AC2B8400B05F3A /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		182FD11D28AD449100C8DCA7 /* ViewsWithEnumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsWithEnumView.swift; sourceTree = "<group>"; };
 		182FD11F28AD46E400C8DCA7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		182FD12128AD560900C8DCA7 /* FaceIdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIdView.swift; sourceTree = "<group>"; };
 		1850507A28AC2B7F00B05F3A /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1850507D28AC2B7F00B05F3A /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		1850507F28AC2B7F00B05F3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				1850509028AC588300B05F3A /* FileManager-Decodable.swift */,
 				182FD11D28AD449100C8DCA7 /* ViewsWithEnumView.swift */,
 				182FD11F28AD46E400C8DCA7 /* MapView.swift */,
+				182FD12128AD560900C8DCA7 /* FaceIdView.swift */,
 			);
 			path = exercises;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				182FD12028AD46E400C8DCA7 /* MapView.swift in Sources */,
 				1850508D28AC4EF000B05F3A /* conformanceToComparable.swift in Sources */,
+				182FD12228AD560900C8DCA7 /* FaceIdView.swift in Sources */,
 				1850509128AC588300B05F3A /* FileManager-Decodable.swift in Sources */,
 				1850508F28AC570700B05F3A /* DocumentsDirectoryView.swift in Sources */,
 				1850508028AC2B7F00B05F3A /* ContentView.swift in Sources */,
@@ -298,6 +302,7 @@
 				DEVELOPMENT_TEAM = N89SVX78VR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -327,6 +332,7 @@
 				DEVELOPMENT_TEAM = N89SVX78VR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
