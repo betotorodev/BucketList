@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182FD11E28AD449100C8DCA7 /* ViewsWithEnumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FD11D28AD449100C8DCA7 /* ViewsWithEnumView.swift */; };
 		1850507E28AC2B7F00B05F3A /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850507D28AC2B7F00B05F3A /* BucketListApp.swift */; };
 		1850508028AC2B7F00B05F3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850507F28AC2B7F00B05F3A /* ContentView.swift */; };
 		1850508228AC2B8400B05F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1850508128AC2B8400B05F3A /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		182FD11D28AD449100C8DCA7 /* ViewsWithEnumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsWithEnumView.swift; sourceTree = "<group>"; };
 		1850507A28AC2B7F00B05F3A /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1850507D28AC2B7F00B05F3A /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		1850507F28AC2B7F00B05F3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				1850508C28AC4EF000B05F3A /* conformanceToComparable.swift */,
 				1850508E28AC570700B05F3A /* DocumentsDirectoryView.swift */,
 				1850509028AC588300B05F3A /* FileManager-Decodable.swift */,
+				182FD11D28AD449100C8DCA7 /* ViewsWithEnumView.swift */,
 			);
 			path = exercises;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				1850509128AC588300B05F3A /* FileManager-Decodable.swift in Sources */,
 				1850508F28AC570700B05F3A /* DocumentsDirectoryView.swift in Sources */,
 				1850508028AC2B7F00B05F3A /* ContentView.swift in Sources */,
+				182FD11E28AD449100C8DCA7 /* ViewsWithEnumView.swift in Sources */,
 				1850507E28AC2B7F00B05F3A /* BucketListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
