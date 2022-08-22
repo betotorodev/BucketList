@@ -8,6 +8,10 @@
 import Foundation
 
 extension FileManager {
+  static var documentsDirectory: URL {
+    let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+    return paths[0]
+  }
   func load(_ str: String) -> String {
     let path = self.urls(for: .documentDirectory, in: .userDomainMask)
     
