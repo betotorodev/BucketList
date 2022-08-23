@@ -15,6 +15,7 @@ extension ContentView {
     @Published private(set) var locations: [Location]
     @Published var selectedPlace: Location?
     @Published var isUnlocked = false
+    @Published var errorUnlocked = false
     
     let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedPlaces")
     
@@ -62,7 +63,9 @@ extension ContentView {
               self.isUnlocked = true
             }
           } else {
-            // error
+            Task { @MainActor in
+              self.errorUnlocked = true
+            }
           }
         }
       } else {

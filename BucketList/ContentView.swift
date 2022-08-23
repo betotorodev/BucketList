@@ -44,13 +44,13 @@ struct ContentView: View {
               viewModel.addLocation()
             } label: {
               Image(systemName: "plus")
+                .padding()
+                .background(.black.opacity(0.75))
+                .foregroundColor(.white)
+                .font(.title)
+                .clipShape(Circle())
+                .padding(.trailing)
             }
-            .padding()
-            .background(.black.opacity(0.75))
-            .foregroundColor(.white)
-            .font(.title)
-            .clipShape(Circle())
-            .padding(.trailing)
           }
         }
       }
@@ -68,6 +68,9 @@ struct ContentView: View {
       EditView(location: place) { newLocation in
         viewModel.update(location: newLocation)
       }
+    }
+    .alert("That's not you", isPresented: $viewModel.errorUnlocked) {
+      Text("Sorry")
     }
   }
 }
