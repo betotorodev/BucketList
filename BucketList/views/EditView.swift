@@ -16,7 +16,7 @@ struct EditView: View {
     self.onSave = onSave
     _viewModel = StateObject(wrappedValue: ViewModel(location: location))
   }
-  
+
   var body: some View {
     NavigationView {
       Form {
