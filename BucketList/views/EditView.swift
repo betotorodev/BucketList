@@ -8,25 +8,18 @@
 import SwiftUI
 
 struct EditView: View {
-  enum LoadingState {
-    case loading, loaded, failed
-  }
+//  enum LoadingState {
+//    case loading, loaded, failed
+//  }
   @Environment(\.dismiss) var dismiss
+  @StateObject private var viewModel = ViewModel()
   var location: Location
   var onSave: (Location) -> Void
-  
-  @State private var name: String
-  @State private var description: String
-  
-  @State private var loadingState = LoadingState.loading
-  @State private var pages = [Page]()
   
   init(location: Location, onSave: @escaping (Location) -> Void) {
     self.location = location
     self.onSave = onSave
     
-    _name = State(initialValue: location.name)
-    _description = State(initialValue: location.description)
   }
   
   func fetchNearbyPlaces() async {
@@ -44,11 +37,11 @@ struct EditView: View {
       let items = try JSONDecoder().decode(Result.self, from: data)
       
       // success – convert the array values to our pages array
-      pages = items.query.pages.values.sorted()
-      loadingState = .loaded
+      viewModel.pages = items.query.pages.values.sorted()
+      viewModel.loadingState = .loaded
     } catch {
       // if we're still here it means the request failed somehow
-      loadingState = .failed
+      viewModel.loadingState = .failed
     }
   }
   
@@ -60,9 +53,9 @@ struct EditView: View {
           TextField("Description", text: $description)
         }
         Section("Nearby…") {
-          switch loadingState {
+          switch viewModel.loadingState {
           case .loaded:
-            ForEach(pages, id: \.pageid) { page in
+            ForEach(viewModel.pages, id: \.pageid) { page in
               Text(page.title)
                 .font(.headline)
               + Text(": ") +

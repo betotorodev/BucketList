@@ -62,15 +62,17 @@ struct ContentView: View {
         .background(.blue)
         .foregroundColor(.white)
         .clipShape(Capsule())
+        .alert("Authentication error", isPresented: $viewModel.isShowingAuthenticationError) {
+          Button("OK") { }
+        } message: {
+          Text(viewModel.authenticationError)
+        }
       }
     }
     .sheet(item: $viewModel.selectedPlace) { place in
       EditView(location: place) { newLocation in
         viewModel.update(location: newLocation)
       }
-    }
-    .alert("That's not you", isPresented: $viewModel.errorUnlocked) {
-      Text("Sorry")
     }
   }
 }
